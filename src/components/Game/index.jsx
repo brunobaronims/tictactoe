@@ -53,7 +53,7 @@ export default function Game() {
         if (count === 0) {
             setPosition([tableIndex[index]]);
         } else {
-            setPosition(position.concat([tableIndex[index]]));
+            setPosition(position.slice(0, count).concat([tableIndex[index]]));
         }
     }
     
