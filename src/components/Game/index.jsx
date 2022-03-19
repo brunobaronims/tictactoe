@@ -62,11 +62,6 @@ export default function Game() {
         setTurn((move % 2) === 0);
     }
 
-    console.log(count);
-    console.log(history);
-    console.log(current);
-    console.log(position);
-
     const winner = calculateWinner(current);
     let status;
     if (winner) {
